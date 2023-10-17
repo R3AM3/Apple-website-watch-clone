@@ -1,0 +1,62 @@
+// @mixin flex-center {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+/* $radius is the parameter of the function */
+
+// @mixin border-radius($radius) {
+//     -webkit-border-radius: $radius;
+//     -moz-border-radius: $radius;
+//     border-radius: $radius;
+// }
+
+@mixin keynote{
+    padding: 10px 25px;
+    border-radius: 0;
+    border: none;
+    background-color: #e0083f;
+    color: white;
+
+    &:hover{
+        background-color: #b90733;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
+
+@mixin learnmore{
+    padding: 10px 25px;
+    border-radius: 0;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+
+    &:hover{
+        color: rgb(224, 224, 224);
+        cursor: pointer;
+        border: 2px solid rgb(224, 224, 224);
+        transition: 0.5s;
+    }
+}
+
+@mixin learnmore2{
+    padding: 10px 25px;
+    border-radius: 0;
+    border: 2px solid grey;
+    background: transparent;
+    color: grey;
+
+    &:hover{
+        color: rgb(85, 84, 84);
+        cursor: pointer;
+        border: 2px solid rgb(85, 84, 84);
+        transition: 0.5s;
+    }
+}
+
+@mixin mobilealign{
+    width: 100%;
+    text-align: center;
+}
